@@ -1,0 +1,10 @@
+#!/bin/sh
+echo "creating ~/.bbp"
+echo " " > ~/.bbp
+echo "creating tmp"
+echo " " > tmp
+echo "removing redundant source calls in ~/.bashrc"
+grep -v "source ~/.bbp" ~/.bashrc > tmp
+mv tmp ~/.bashrc
+echo "adding source call to ~/.bashrc"
+echo "source ~/.bbp" >> ~/.bashrc

@@ -1,0 +1,8 @@
+#!/bin/sh
+echo "removing source calls in ~/.bashrc"
+grep -v "source ~/.bbp" ~/.bashrc > tmp
+mv tmp ~/.bashrc
+echo "removing ~/.bbp"
+rm ~/.bbp
+echo "rerunning ~/.bashrc"
+source ~/.bashrc
