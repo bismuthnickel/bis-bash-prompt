@@ -1,0 +1,9 @@
+#!/bin/sh
+export BISBASHPROMPTVERSION=7
+echo "installing bbp version $BISBASHPROMPTVERSION"
+source ./src/installbbp
+echo "setting ~/.bbp"
+echo "export BISBASHPROMPTVERSION=$BISBASHPROMPTVERSION" > ~/.bbp
+echo "PS1='< ( \[\e[35m\]bbp \[\e[34;1m\]v${BISBASHPROMPTVERSION:-?}\[\e[0m\] ) \[\e[33m\]\u\[\e[2m\]+\[\e[22m\]\h\[\e[0m\] | \[\e[92m\]\w\[\e[0m\] \$> '" >> ~/.bbp
+echo "rerunning ~/.bashrc"
+source ~/.bashrc
