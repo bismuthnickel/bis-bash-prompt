@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "installing bbp version 4"
+source ./src/installbbp
+echo "setting ~/.bbp"
+echo "PS1='\[\e[36m\]\s\[\e[0m\] \[\e[34;1m\]\v\[\e[0m\] | \[\e[92;5m\]\#\[\e[0m\]/\[\e[92m\]\!\[\e[0m\] {\[\e[93m\]$?\[\e[0m\]} \[\e[32m\]\u@\h\[\e[0m\]:\[\e[34m\]\w\[\e[0m\]\$ '" > ~/.bbp
+echo "rerunning ~/.bashrc"
+source ~/.bashrc
