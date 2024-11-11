@@ -1,2 +1,3 @@
 #!/bin/sh
+echo $1 >> ./logs/log
 source $1 >> ./logs/log
