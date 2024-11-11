@@ -1,0 +1,9 @@
+#!/bin/sh
+export BISBASHPROMPTVERSION=9
+echo "installing bbp version $BISBASHPROMPTVERSION"
+source ./src/installbbp
+echo "setting ~/.bbp"
+echo "export BISBASHPROMPTVERSION=$BISBASHPROMPTVERSION" > ~/.bbp
+echo "PS1='\$ '" >> ~/.bbp
+echo "rerunning ~/.bashrc"
+source ~/.bashrc
