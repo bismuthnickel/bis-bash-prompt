@@ -1,4 +1,5 @@
 #!/bin/sh
+echo uninstalling bbp v$BISBASHPROMPTVERSION
 echo "removing source calls in ~/.bashrc"
 grep -v "source ~/.bbp" ~/.bashrc > tmp
 mv tmp ~/.bashrc
