@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 export BISBASHPROMPTVERSION=3
 echo "installing bbp version $BISBASHPROMPTVERSION"
 source ./src/installbbp
