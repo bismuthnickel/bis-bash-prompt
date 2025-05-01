@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-export BISBASHPROMPTVERSION=12
+export BISBASHPROMPTVERSION=13
 echo "installing bbp version $BISBASHPROMPTVERSION"
 source ./src/installbbp
 echo "setting ~/.bbp"
